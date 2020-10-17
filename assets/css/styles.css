@@ -4,7 +4,105 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 650px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #ima1 {
+    display: none;
+  }
+
+  .instruments {
+    width: calc(70%);
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+header{
+  position:-webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+a {
+  color text-decoration: none;
+}
+h2 {
+  text-align: center;
+  display: block;
+}
+
+.ima {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+section{
+  display:block;
+}
+.benefits{
+  display: flex;
+  flex-direction: column;
+}
+
+.instruments > div{
+  background-color: #ddd;
+color: black;
+padding: 15px 0;
+width: 100%;
+text-transform: uppercase;
+}
+.instruments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background-color: #f1c40f;
+  cursor: pointer;
+}
+.two{
+  display:flex;
+  justify-content: space-around;
+}
+footer > .two {
+  text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
-
